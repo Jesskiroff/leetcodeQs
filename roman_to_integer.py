@@ -9,5 +9,10 @@ class Solution(object):
                 "M": 100 }
        res = 0
        for i in range (len(s)):
-           if i + 1 < len(s[i]) 
+           if i + 1 <  len(s) and roman[s[i + 1]]:
+               res -= roman[s[i]]
+           else:
+               res += roman[s[i]]
+
+       return res
         
